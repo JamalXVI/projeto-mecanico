@@ -1,0 +1,49 @@
+    <persistence xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+            http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        version="2.0">
+        <persistence-unit name="default">
+            <provider>org.hibernate.ejb.HibernatePersistence</provider>
+            <class>br.com.jamalxvi.modelo.Estado</class>
+            <class>br.com.jamalxvi.modelo.Cidade</class>
+            <class>br.com.jamalxvi.modelo.Funcionario</class>
+            <class>br.com.jamalxvi.modelo.FotoPerfil</class>
+            <class>br.com.jamalxvi.modelo.Cliente</class>
+            <class>br.com.jamalxvi.modelo.TelefoneCliente</class>
+            <class>br.com.jamalxvi.modelo.Fornecedor</class>
+            <class>br.com.jamalxvi.modelo.Identificacao</class>
+            <class>br.com.jamalxvi.modelo.IdentificacaoVeiculo</class>
+            <class>br.com.jamalxvi.modelo.TelefoneFornecedor</class>
+            <class>br.com.jamalxvi.modelo.Solicitacoes</class>
+            <class>br.com.jamalxvi.modelo.ServicosFeitos</class>
+            <class>br.com.jamalxvi.modelo.ServicosExecutados</class>
+            <class>br.com.jamalxvi.modelo.Servicos</class>
+            <class>br.com.jamalxvi.modelo.PecasUsadas</class>
+            <class>br.com.jamalxvi.modelo.Pecas</class>
+            <class>br.com.jamalxvi.modelo.Orcamento</class>
+            <class>br.com.jamalxvi.modelo.Marca</class>
+            <class>br.com.jamalxvi.modelo.Fotos_Solicitacoes</class>
+            <class>br.com.jamalxvi.modelo.Produtor</class>
+            <class>br.com.jamalxvi.modelo.TelefoneProdutor</class>
+            <class>br.com.jamalxvi.modelo.IdentificacaoProdutor</class>
+            <class>br.com.jamalxvi.modelo.Contas</class>
+            <class>br.com.jamalxvi.modelo.Pendura</class>
+            <properties>
+                <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+                <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/Mecanica" />
+                <property name="javax.persistence.jdbc.user" value="root" />
+                <property name="javax.persistence.jdbc.password" value="ug3aLDz2Oxn8e06" />
+                <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+                <property name="hibernate.hbm2ddl.auto" value="update"/>
+                <property name="hibernate.show_sql" value="true"/>
+                <property name="hibernate.format_sql" value="true"/>
+                <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
+                <property name="eclipselink.query-results-cache" value="false"/>
+                <property name="eclipselink.cache.shared.default" value="false"/>
+				<property name="eclipselink.cache.size.default" value="0"/>
+				<property name="eclipselink.cache.type.default" value="None"/>
+				<property name="eclipselink.jdbc.autoReconnect" value="true" />
+            </properties>	
+        </persistence-unit>
+    </persistence>
